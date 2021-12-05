@@ -1,0 +1,87 @@
+
+@import './_variables';
+@import './_mixins';
+
+
+
+div#taskmanager {
+
+    @include centralize;
+    height: 100vh;
+    width: 100vw;
+    background: $purple;
+
+    main#main-container {
+
+        @include centralize;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100%;
+        width: 650px;
+        background: $lightPurple;
+
+    }
+
+    section#section-new-task {
+
+        @include centralize;
+        flex-direction: column;
+        margin: 20px auto auto auto;
+
+        input#new-task {
+
+            @include setPoppins;
+            font-size: 16pt;
+            outline: none;
+            height: 60px;
+            width: 500px;
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            color: $purple;
+            
+        }
+
+        button {
+
+            @include setPoppins;
+            font-size: 12pt;
+            color: $purple;
+            background-color: $white;
+            border: none;
+            border-radius: 4px;
+            height: 40px;
+            width: 500px;
+            margin: 5px auto 10px auto;
+            cursor: pointer;
+            transition: 0.2s;
+
+        }
+
+        button:hover {
+
+            background-color: $purple;
+            color: $white;
+            //border: 1px solid $white; 
+
+        }
+
+    }
+
+    section#alltasks {
+
+        @include centralize;
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 20px auto 20px auto;
+        padding: 15px;
+        width: 500px;
+        background: $purple;
+        border-radius: 4px;
+
+    }
+
+
+}

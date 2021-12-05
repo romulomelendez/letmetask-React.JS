@@ -1,0 +1,65 @@
+
+@import '../../styles/variables';
+@import '../../styles//mixins';
+
+div.task-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $lightPurple;
+    border-radius: 4px;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+
+    div.task {
+        
+        @include setPoppins;
+        border-radius: 4px;
+        width: 100%;
+        margin: 4px auto 4px auto;
+        padding: 10px;
+        background-color: $lightPurple;
+        color: $white;
+        
+        h3, h5, h6 {
+            
+            @include setPoppins;
+            margin: 4px;
+            color: $purple;
+            
+        }
+        
+        div.buttons-container {
+            
+            button {
+                
+                @include setPoppins;
+                font-size: 12pt;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                margin: 15px 5px 15px 5px;
+                border: none;
+                background-color: $purple;
+                color: $white;
+                cursor: pointer;
+                
+            }
+            
+        }
+        
+    }
+
+    p {
+
+        @include setPoppins;
+        font-size: 12pt;
+        text-align: center;
+        width: 100%;
+        color: $white;
+
+    }    
+
+}

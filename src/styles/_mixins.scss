@@ -1,0 +1,29 @@
+//  MIXINS(like a Functions)
+@mixin defaultSettings() {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@mixin bodySettings() {
+
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+@mixin centralize() {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@mixin setPoppins() { font-family: 'Poppins', sans-serif; }
+
+@mixin setRoboto() { font-family: 'Roboto', sans-serif; }

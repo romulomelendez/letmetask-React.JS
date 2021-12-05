@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+@import '../../styles//mixins';
+
+div.task-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $lightPurple;
+    border-radius: 4px;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+
+    div.task {
+
+        @include setPoppins;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 4px;
+        border: solid 3px $purple;
+        width: 100%;
+        margin: 4px auto 4px auto;
+        padding: 10px;
+        background-color: $lightPurple;
+        color: $white;
+
+        div h3, h5 {
+
+            @include setPoppins;
+            margin: 4px;
+            color: $white;
+
+        }
+
+        div button {
+
+            padding: 5px;
+            width: 25px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            color: $lightPurple;
+            transition: ease 0.2
+
+        }
+
+        div button:hover { 
+
+            background-color: $purple;
+            color: $white;
+
+        }
+
+    }
+
+    p {
+
+        @include setPoppins;
+        font-size: 12pt;
+        text-align: center; 
+        width: 100%;
+        color: $white;
+
+    }
+
+}
